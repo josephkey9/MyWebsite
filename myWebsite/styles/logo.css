@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap');
+
+
+:root{
+    --main-color: #ffffff;
+    --black-color: #090909;
+    --border: 0.1rem solid rgba(255,255,255,0.4);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.5 ease;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x:hidden;
+}
+
+body{
+    background-image: url(/images/background1.jpg);
+    height: 390vh;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    padding: 2rem 7%;
+}
+
+.header .logo img {
+    height: 7rem;
+}
+.header{
+     font-family: "Bebas Neue", sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 5px 5px 5px 5px #000000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .navbar a{
+     margin: 0 1rem;
+     font-size: 16px;
+     color: #090909;
+     border-bottom: 0.3rem solid transparent ;
+     transition: all 0.5s;
+}
+.header .navbar a:hover{
+    border-color: #d54f75;
+    padding-bottom: 0rem;
+}
+
+.header .button span{
+    display: inline-flex;
+    word-spacing: 5px;
+}
+
+.header .button i{
+   width: 200px;
+   width: 100%;
+}
+
+.header .button {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: #29272c;
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.header .button:hover {
+    background-color: #000000;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home .content{
+ padding-top: 125px;
+ font-family: "Playwrite AU QLD", cursive;
+ animation: fadeInDown 2s ease-out;
+}
+
+.home .content h2{
+ font-size: 6rem;
+ color: #000000;
+ 
+}
+
+.projects{
+    margin-top: 200px;
+}
+
+.heading{
+    color: #000000;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 4rem;
+    text-decoration: underline;
+}
+
+.heading span{
+    text-decoration: underline;
+}
+
+.projects .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+.projects .box-container .box {
+    padding: 3rem;
+    min-height: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.projects .box-container .box img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.projects .box-container .box span{
+    font-size: 3rem;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.projects .box-container .box .explain{
+    font-family: "Playwrite AU QLD", cursive;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+
+.box-bottom{
+    background: #000000;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.5s;
+    box-shadow: 5px 5px 5px rgb(197, 1, 1);
+    margin-left:30px;
+}
+.box-bottom:hover{
+    width: 200px;
+    height: 50px;
+}
+.box-bottom:hover .btn{
+    color: red;
+}
+.box-bottom .btn {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+.about {
+    margin-top: 120px;
+    max-width: 2000px;
+    width: 100%;
+}
+
+.about-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem;
+    align-items: flex-start;
+}
+
+.aboutexplain {
+    flex: 2;
+    font-family: "Playwrite AU QLD", cursive;
+    font-size: 2rem;
+    margin-top: 20px;
+    min-width: 300px;
+}
+
+.aboutskills {
+    flex: 1;
+    background: #f5f5f5;
+    padding: 2rem;
+    border-radius: 5rem;
+    box-shadow: 5px 5px 5px 5px #000000;
+    font-family: "Playwrite AU QLD", cursive;
+    min-width: 250px;
+}
+
+.aboutskills h4 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.aboutskills ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.6rem;
+}
+
+.aboutskills ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.contact{
+    display: block;
+    width: 100%;
+}
+
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    font-family: "Playwrite AU QLD", cursive;
+    gap: 20rem;
+    margin-top: 50px;
+}
+
+.contact span{
+    font-size: 2rem;
+    color: rgb(47, 96, 142);
+    text-decoration: underline;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.contact .contact-content p {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 2rem;
+   box-shadow: 5px 5px 5px 5px #000000;
+    width: fit-content;
+}
+
+
+
+
+.contact .contact-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    font-family: "Playwrite AU QLD", cursive;
+    gap: 23rem;
+    margin-top: 200px;
+    
+}
+
+.contact .contact-buttons a{
+    background: #f5f5f5;
+    padding: 2rem;
+    border-radius: 5rem;
+    box-shadow: 5px 5px 5px 5px #000000;
+    font-family: "Playwrite AU QLD", cursive;
+    min-width: 250px;
+    text-align: center;
+    width: 250px;
+    height: 60px;
+    transition: all 1s;
+    display: flex;
+    align-items: center; 
+    justify-content: center ; 
+    gap: 10px; 
+}
+
+.contact .contact-buttons a:hover{
+    width: 300px;
+    height: 70px;
+}
+
+.contact .contact-buttons .btn-linkedin{
+     background-color: #0077b5;
+     color: #ffffff;
+     align-items: center;
+}
+
+.contact .contact-buttons .icon{
+    width: 30px;
+    height: 30px;
+}
+
+.contact .contact-buttons .btn-wp{
+    background-color: #25D366;
+    color: #ffffff;
+    align-items: center;
+}
+
+.contact .contact-buttons .btn-github{
+    background-color: #333;
+    color: #ffffff;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+        gap: 1rem;
+    }
+
+    .header .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .header .navbar a {
+        margin: 1rem 0;
+        font-size: 1.6rem;
+    }
+
+    .header .button {
+        width: 100%;
+        justify-content: center;
+        font-size: 1.4rem;
+    }
+
+    .home .content h2 {
+        font-size: 4rem;
+    }
+
+    .home .content p {
+        font-size: 2rem !important;
+    }
+
+    .projects .box-container {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .projects .box-container .box img {
+        height: 200px;
+    }
+
+    .about-box-container {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .aboutexplain, .aboutskills {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .contact .contact-content {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .contact .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        margin-top: 5rem;
+    }
+
+    .contact .contact-buttons a {
+        width: 80%;
+        height: auto;
+        font-size: 1.6rem;
+        padding: 1.5rem;
+    }
+
+    .box-bottom {
+        margin-left: 0;
+    }
+}
+
+
+
+
+
