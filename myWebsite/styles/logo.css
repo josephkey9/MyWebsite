@@ -23,7 +23,7 @@ html{
 }
 
 body{
-    background-image: url(/images/background1.jpg);
+    background-image: url(/myWebsite/images/background1.jpg);
     height: 390vh;
     margin: 0;
     padding: 0;
@@ -328,34 +328,36 @@ section{
 }
 
 @media (max-width: 768px) {
-
     html {
         font-size: 55%;
     }
 
     .header {
         flex-direction: column;
-        align-items: flex-start;
-        padding: 2rem;
+        padding: 1.5rem;
+        margin: 1rem 5%;
         gap: 1rem;
+    }
+
+    .header h1 {
+        font-size: 2rem;
     }
 
     .header .navbar {
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .header .navbar a {
-        margin: 1rem 0;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
+        margin: 0.5rem;
     }
 
     .header .button {
-        width: 100%;
-        justify-content: center;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+        padding: 8px 16px;
     }
 
     .home .content h2 {
@@ -368,44 +370,51 @@ section{
 
     .projects .box-container {
         grid-template-columns: 1fr;
-        padding: 0 1rem;
+        gap: 2rem;
+    }
+
+    .projects .box-container .box {
+        padding: 2rem;
+        min-height: 50rem;
     }
 
     .projects .box-container .box img {
-        height: 200px;
+        height: 250px;
+    }
+
+    .box-bottom {
+        margin-left: 0;
+        width: 130px;
     }
 
     .about-box-container {
         flex-direction: column;
-        gap: 4rem;
+        gap: 3rem;
     }
 
     .aboutexplain, .aboutskills {
         width: 100%;
-        padding: 1rem;
+    }
+
+    .aboutexplain {
+        font-size: 1.6rem;
     }
 
     .contact .contact-content {
         flex-direction: column;
-        gap: 3rem;
+        gap: 2rem;
     }
 
     .contact .contact-buttons {
         flex-direction: column;
         align-items: center;
-        gap: 3rem;
+        gap: 2rem;
         margin-top: 5rem;
     }
 
     .contact .contact-buttons a {
         width: 80%;
-        height: auto;
-        font-size: 1.6rem;
-        padding: 1.5rem;
-    }
-
-    .box-bottom {
-        margin-left: 0;
+        min-width: 200px;
     }
 }
 
